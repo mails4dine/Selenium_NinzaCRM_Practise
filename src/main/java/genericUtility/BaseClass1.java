@@ -59,7 +59,7 @@ public class BaseClass1 {
                
     }
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void loginToApp() throws IOException, InterruptedException {
     	
     	String URL = putil.togetDataFrompropertiesFile("Url");
@@ -73,7 +73,7 @@ public class BaseClass1 {
         
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void logoutFromApp() throws InterruptedException {
     	HomePage homepage=new HomePage(driver); 
     	Thread.sleep(2000);
