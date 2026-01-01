@@ -1,5 +1,6 @@
 package ObjectRepository;
 
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -60,15 +61,24 @@ public class HomePage {
 	}
 
 	public void logoutToApplication() {
-		HomePage homePage = new HomePage(driver);
-	    WebElement usericon = homePage.getUsericon();
-		WebDriverUtility wutil=new WebDriverUtility();
-		wutil.waitForVisibilityofElement(driver,usericon );
-	    wutil.mouseHoverOnWebElement(driver, usericon);
-	    usericon.click();
-	    wutil.waitForVisibilityofElement(driver, getLogoutBtn());
-		wutil.waitForPagetoLoad(driver);
-		getLogoutBtn().click();
+	    WebDriverUtility wutil = new WebDriverUtility();
+	    int retryCount = 0;
+	    
+	    // Retry up to 3 times if a Stale Element exception occurs
+	    while(retryCount < 3) {
+	        try {
+	            wutil.waitForVisibilityofElement(driver, campaign);
+	            usericon.click();
+	            
+	            wutil.waitForVisibilityofElement(driver, getLogoutBtn());
+	            getLogoutBtn().click();
+	            break; // Exit loop if successful
+	        } catch (StaleElementReferenceException e) {
+	            retryCount++;
+	            // Re-initialize elements if necessary or just wait a moment
+	            if(retryCount == 3) throw e; 
+	        }
+	    }
 	}
 	
 	
