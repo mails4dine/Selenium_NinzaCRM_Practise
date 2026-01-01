@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [NinzaCRM_Marketing_Regression_Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Campaign_Management_Functional_Tests(failed)">
+    <classes>
+      <class name="ImplementationOfTestNG._Commonloginpage_BaseClasss.CreateMultipleCampaignTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="loginToApp"/>
+          <include name="logoutFromApp"/>
+          <include name="createMultipleCampaignTest"/>
+        </methods>
+      </class> <!-- ImplementationOfTestNG._Commonloginpage_BaseClasss.CreateMultipleCampaignTest -->
+      <class name="ImplementationOfTestNG._Commonloginpage_BaseClasss.DeleteCampaign">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="loginToApp"/>
+          <include name="deleteCampaignsTest"/>
+          <include name="logoutFromApp"/>
+        </methods>
+      </class> <!-- ImplementationOfTestNG._Commonloginpage_BaseClasss.DeleteCampaign -->
+      <class name="ImplementationOfTestNG._Commonloginpage_BaseClasss.CreateCampaignTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="loginToApp"/>
+          <include name="createCampaignTest"/>
+          <include name="logoutFromApp"/>
+        </methods>
+      </class> <!-- ImplementationOfTestNG._Commonloginpage_BaseClasss.CreateCampaignTest -->
+      <class name="ImplementationOfTestNG._Commonloginpage_BaseClasss.CreateProductTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="loginToApp"/>
+          <include name="createProductTest"/>
+          <include name="logoutFromApp"/>
+        </methods>
+      </class> <!-- ImplementationOfTestNG._Commonloginpage_BaseClasss.CreateProductTest -->
+      <class name="ImplementationOfTestNG._Commonloginpage_BaseClasss.CreateCampaignProductTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="createCampaignTest"/>
+          <include name="launchBrowser"/>
+          <include name="createCampaignwithDateTest"/>
+          <include name="loginToApp"/>
+          <include name="logoutFromApp"/>
+          <include name="createProductTest"/>
+          <include name="createCampaignWithStatusTest"/>
+        </methods>
+      </class> <!-- ImplementationOfTestNG._Commonloginpage_BaseClasss.CreateCampaignProductTest -->
+      <class name="ImplementationOfTestNG._Commonloginpage_BaseClasss.UserAuthenticationTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="loginToApp"/>
+          <include name="loginTest"/>
+          <include name="logoutFromApp"/>
+        </methods>
+      </class> <!-- ImplementationOfTestNG._Commonloginpage_BaseClasss.UserAuthenticationTest -->
+      <class name="ImplementationOfTestNG._Commonloginpage_BaseClasss.CreateMultipleProductTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="loginToApp"/>
+          <include name="createMultipleProductTest"/>
+          <include name="logoutFromApp"/>
+        </methods>
+      </class> <!-- ImplementationOfTestNG._Commonloginpage_BaseClasss.CreateMultipleProductTest -->
+      <class name="ImplementationOfTestNG._Commonloginpage_BaseClasss.CreateCampaignWithDateTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="createCampaignwithDateTest"/>
+          <include name="launchBrowser"/>
+          <include name="loginToApp"/>
+          <include name="logoutFromApp"/>
+        </methods>
+      </class> <!-- ImplementationOfTestNG._Commonloginpage_BaseClasss.CreateCampaignWithDateTest -->
+      <class name="ImplementationOfTestNG._Commonloginpage_BaseClasss.CreateCampaignWithStatusTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="loginToApp"/>
+          <include name="logoutFromApp"/>
+          <include name="createCampaignWithStatusTest"/>
+        </methods>
+      </class> <!-- ImplementationOfTestNG._Commonloginpage_BaseClasss.CreateCampaignWithStatusTest -->
+      <class name="ImplementationOfTestNG._Commonloginpage_BaseClasss.DeleteProduct">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="deleteProductTest"/>
+          <include name="launchBrowser"/>
+          <include name="loginToApp"/>
+          <include name="logoutFromApp"/>
+        </methods>
+      </class> <!-- ImplementationOfTestNG._Commonloginpage_BaseClasss.DeleteProduct -->
+    </classes>
+  </test> <!-- Campaign_Management_Functional_Tests(failed) -->
+</suite> <!-- Failed suite [NinzaCRM_Marketing_Regression_Suite] -->

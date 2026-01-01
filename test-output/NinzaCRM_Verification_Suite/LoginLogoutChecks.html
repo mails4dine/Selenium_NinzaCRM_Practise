@@ -1,0 +1,150 @@
+<html>
+<head>
+<title>TestNG:  LoginLogoutChecks</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>LoginLogoutChecks</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Dec 29 22:58:30 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>18 seconds (18285 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='ImplementationOfTestNG.CreateCampaignwithStatus.createCampaignWithStatusTest()'><b>createCampaignWithStatusTest</b><br>Test class: ImplementationOfTestNG.CreateCampaignwithStatus<br>Test method: Verify that a user can create a campaign with a specific status and size<br/>
+<a href="#Output-730955696" onClick='toggleBox("Output-730955696", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-730955696" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-730955696">
+User logged in successfully.<br/>
+Successfully created Campaign: DhineshCCC<br/>
+Campaign Details: [URL: http://49.249.28.218:8098/campaigns | Status: Active | Size: 400']<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>ImplementationOfTestNG.CreateCampaignwithStatus@765d7657</td></tr>
+<tr>
+<td title='ImplementationOfTestNG.CreateCampaign.createCampaignTest()'><b>createCampaignTest</b><br>Test class: ImplementationOfTestNG.CreateCampaign<br>Test method: Verify that a user can create a campaign with mandatory fields<br/>
+<a href="#Output-382252989" onClick='toggleBox("Output-382252989", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-382252989" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-382252989">
+User logged in successfully.<br/>
+Successfully created Campaign: DhineshCBA<br/>
+Campaign Details: [URL: http://49.249.28.218:8098/campaigns | Status: Active | Size: 400']<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>ImplementationOfTestNG.CreateCampaign@443118b0</td></tr>
+<tr>
+<td title='ImplementationOfTestNG.Logout.logoutTest()'><b>logoutTest</b><br>Test class: ImplementationOfTestNG.Logout<br/>
+<a href="#Output-1630413241" onClick='toggleBox("Output-1630413241", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1630413241" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1630413241">
+Logout Successfully<br/>
+URL :http://49.249.28.218:8098/<br/>
+===============================================<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>ImplementationOfTestNG.Logout@618b19ad</td></tr>
+<tr>
+<td title='ImplementationOfTestNG.Login.loginTest()'><b>loginTest</b><br>Test class: ImplementationOfTestNG.Login<br/>
+<a href="#Output-662925691" onClick='toggleBox("Output-662925691", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-662925691" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-662925691">
+Login Successfully<br/>
+URL :http://49.249.28.218:8098/dashboard<br/>
+===============================================<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>ImplementationOfTestNG.Login@3590fc5b</td></tr>
+<tr>
+<td title='ImplementationOfTestNG.CreateCampaignwithDate.createCampaignwithDateTest()'><b>createCampaignwithDateTest</b><br>Test class: ImplementationOfTestNG.CreateCampaignwithDate<br>Test method: Verify that a user can create a campaign with a specific status, target date, and size<br/>
+<a href="#Output-858267892" onClick='toggleBox("Output-858267892", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-858267892" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-858267892">
+User logged in successfully.<br/>
+Successfully created Campaign: DhineshBAB<br/>
+Campaign Details: [URL: http://49.249.28.218:8098/campaigns | Status: Active | Size: 400']<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>ImplementationOfTestNG.CreateCampaignwithDate@74235045</td></tr>
+</table><p>
+</body>
+</html>

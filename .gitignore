@@ -1,0 +1,8 @@
+/target/
+/ExtentReports/
+/errorshots/
+.settings/
+.project
+.classpath
+bin/
+*.log
