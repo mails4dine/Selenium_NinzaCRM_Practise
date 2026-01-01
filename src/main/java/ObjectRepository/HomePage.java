@@ -72,10 +72,10 @@ public class HomePage {
 	            
 	            wutil.waitForVisibilityofElement(driver, getLogoutBtn());
 	            getLogoutBtn().click();
-	            break; // Exit loop if successful
+	            break; 
 	        } catch (StaleElementReferenceException e) {
 	            retryCount++;
-	            // Re-initialize elements if necessary or just wait a moment
+	           
 	            if(retryCount == 3) throw e; 
 	        }
 	    }
