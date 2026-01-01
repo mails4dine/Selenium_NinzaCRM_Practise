@@ -120,10 +120,7 @@ public class BaseClass1 {
 
                 // 2. Collect HTML Reports (Checking both Maven and Local TestNG locations)
                 String[] reportLocations = {
-                    "./target/surefire-reports/emailable-report.html",
-                    
-                    "./target/surefire-reports/index.html",
-                   
+                    "./target/surefire-reports/emailable-report.html"                   
                 };
 
                 for (String reportPath : reportLocations) {
