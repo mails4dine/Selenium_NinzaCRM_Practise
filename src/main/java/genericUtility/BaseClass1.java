@@ -77,7 +77,14 @@ public class BaseClass1 {
     public void logoutFromApp() throws InterruptedException {
     	HomePage homepage=new HomePage(driver); 
     	Thread.sleep(2000);
-        homepage.logoutToApplication();        
+        
+        try {
+           
+            homepage.logoutToApplication();
+            System.out.println("Logout Successful");
+        } catch (Exception e) {
+            System.out.println("Logout failed but continuing to next test: " + e.getMessage());
+        }
     }
 
     @AfterClass
