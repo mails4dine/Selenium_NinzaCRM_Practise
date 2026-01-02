@@ -2,8 +2,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Ninza CRM Suite" parallel="classes" thread-count="2">
 <listeners>
-        <listener class-name="genericUtility.ListenerImplementation" />
-    </listeners>
+    <listener class-name="genericUtility.ListenerImplementation" />
+    <listener class-name="genericUtility.AnnotationTransformer" />
+</listeners>
     <test name="Regression Tests">
         <packages>
             <package name="ImplementationOfTestNG._Commonloginpage_BaseClasss" />
